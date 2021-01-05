@@ -1,0 +1,44 @@
+@media (min-width: 1000px) {
+    body {
+        background-color: whitesmoke;
+    }
+}
+
+@media (max-width: 999px) {
+    body {
+        background-color: lightseagreen;
+    }
+}
+
+#id {
+    font-size: 28px;
+}
+
+.header {
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    font-size: 18px;
+}
+
+div {
+    margin: auto;
+    padding: 10px;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}

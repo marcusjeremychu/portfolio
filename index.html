@@ -1,16 +1,46 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title> About me </title>
+        <title> Marcus Chu </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">.
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .fa {
+                padding: 5px;
+                font-size: 20px;
+                width: 40px;
+                text-align: center;
+                text-decoration: none;
+                margin: 2px 2px;
+                border-radius: 50%;
+            }
+            
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-linkedin {
+                background: #007bb5;
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
-            <h1> About me </h1>
-            <img src="img/profile1.jpg" class="rounded mx-auto d-block" alt="Me at graduation" height=400px style="margin-bottom: 30px;">
-            <p> I'm a first year graduate student from Singapore pursuing a MSEE at the University of Washington. I also just graduated from UW in 2020 with a BSEE with a concentration in embedded systems. My technical background is especially diverse, so I strive to apply this collection of experiences in all the work I do. Currently looking for summer internships! </p>
-            <p> I am passionate about finding and building solutions for difficult problems, and working with teams to achieve them. I have experience in both engineering work and project management, and I am looking to apply my experiences in any field that I can. </p>
+            <h1> Marcus Chu </h1>
+            <div class="row align-items-start">
+                <div class="col">
+                    <img src="img/profile1.jpg" class="rounded mx-auto d-block" alt="Me at graduation" height=400px style="margin-bottom: 30px;">
+                </div>
+                <div class="col">
+                    <h3>About Me</h3>
+                    
+                    <p> I'm a first year graduate student from Singapore pursuing a MSEE at the University of Washington. I also just graduated from UW in 2020 with a BSEE with a concentration in embedded systems. My technical background is especially diverse, so I strive to apply this collection of experiences in all the work I do. Currently looking for summer internships! </p>
+                    <p> I am passionate about finding and building solutions for difficult problems, and working with teams to achieve them. I have experience in both engineering work and project management, and I am looking to apply my experiences in any field that I can. </p>
+                    <a href="https://www.linkedin.com/in/marcusjchu/" class="fa fa-linkedin"></a>
+                </div>
+            </div>
         </div>
 
         <div class="container">
@@ -26,45 +56,31 @@
                 <li>Machine Learning for Cyber Security</li>
             </ul>
 
-            <h2>Previous Projects</h2>
+            <hr style="margin-bottom: 20px; margin-top: 20px">
+
+            <h3>Previous Projects</h3>
             <b>ENGINE Capstone with Microsoft – Automated Server Workcell for Datacenters</b>
             <p>Manually repairing servers is labor intensive and costly for large server farms. By implementing a workcell that can replace parts on a server with minimal human intervention, my capstone team and I produced an autonomous solution that can help to reduce costs and man hours spent on menial tasks. Using two KUKA 7-axis arms and custom end effectors on a server work cell, we integrated machine vision with Cognex cameras to handle arbitrary server poses on a conveyor belt. </p>
-            <img src="img/microsft_capstone.jpg" class="rounded mx-auto d-block" height=400px style="margin-bottom: 10px;">
+            <img src="img/microsoft_capstone.jpg" class="rounded mx-auto d-block" height=400px style="margin-bottom: 10px; margin-top: 10px;">
             <p>I worked as the team lead for the project where I worked on integrating the machine vision, Arduino communications with the conveyor belt, as well as the project management. Check out our poster <a href="https://www.ece.uw.edu/wp-content/uploads/2020/05/09_ENGINE-2020-Microsoft-2.pdf">here.</a></p>
 
             <b>High Power LED Array with Adapter Board for Large Scale Optogenetics Interface for Non-Human Primates</b>
-            <img src="img/yazdan_lab.jpg" class="rounded mx-auto d-block" height=400px style="margin-bottom: 10px;">
+            <img src="img/yazdan_lab.jpg" class="rounded mx-auto d-block" height=400px style="margin-bottom: 10px; margin-top: 10px;">
             <p>Optogenetics is a novel neuromodulation method that essentially uses light to activate (or inhibit) neurons by using optogenetic actuators to allow the neurons to be activated by light. In my time at Dr. Azadeh Yazdan’s Neural Engineering and Rehabilitation Design lab, I designed a high-powered LED array alongside an adapter board to drive the LED array through the Grapevine Nomad neural interface processor. The LED array is only 13mm by 13mm in size and was designed to fit snugly into the housing mounted on the monkey’s skull. </p>
 
             <b>Axon Internship – Building Test Firmware to Measure Recoil, and Redesigning a Self-Test for the High Voltage Module</b>
             <p>In my 10 weeks in Scottsdale, Arizona, I was exposed to a huge variety of fields including manufacturing, testing and validation, as well as medical testing for Taser exposure. However, most of my time was spent in the Conductive Electrical Weaponry division as a Hardware Engineering Intern where I primarily worked on firmware. My first project was building a test firmware build to utilize an on-board accelerometer on the control board of the Taser 7 to investigate recoil patterns for different firearm primers. After I finished that project, I moved onto redesigning the self-test procedure for the high voltage module to provide more reliable validation in both manufacturing and user use-case scenarios. </p>
-            <p>I also got exposed to the Taser 7 myself! If you’re wondering why I did it, it was because I was too curious on what it would feel like, and I also felt that if I ever ended working at Axon I should understand the impact of what I would be contributing to. Here’s a video of it: </p>
-            <video width="720" height="480" controls>
-                <source src="img/axon_vid.MOV" type="video/MOV">
-            </video>
+            <p>I also got exposed to the Taser 7 myself! If you’re wondering why I did it, it was because I was too curious on what it would feel like, and I also felt that if I ever ended working at Axon I should understand the impact of what I would be contributing to.</p>
 
             <b>Intro to Computer Architecture – Implementing a 64-bit 5-stage pipelined ARM CPU on an FPGA</b>
             <p>In my senior year at UW, I took EE 469 – Intro to Computer Architecture and to this day it remains my favorite class at UW. The labs were a continuous development of a 64 bit 5-stage pipelined ARM CPU as we continued to learn about the different constituents of the CPU. The tasks culminated to a functioning ARM CPU done entirely on SystemVerilog, with pipelining features such as branch acceleration and forwarding, with all gates limited to a maximum of 4 inputs (larger gates were built upon). Everything was done with Quartus and ModelSIM.</p>
 
-            <h2>Previous Grad Coursework</h2>
+            <h3>Previous Grad Coursework</h3>
             <ul>
                 <li>The Self Driving Car: Introduction to AI for Mobile Robots</li>
                 <li>Deep Learning for Big Visual Data</li>
             </ul>
         </div>
 
-        <div class="container">
-            <h1> Contact me! </h1>
-            <table style="margin-bottom: 30px;">
-                <tr>
-                    <th> Email: </th>
-                    <td> marcus.jeremy.chu@gmail.com </td>
-                </tr>
-                <tr>
-                    <th> LinkedIn: </th>
-                    <td><a href="https://www.linkedin.com/in/marcusjchu/">Link</a></td>
-                </tr>
-            </table>
-        </div>
     </body>
 </html>
